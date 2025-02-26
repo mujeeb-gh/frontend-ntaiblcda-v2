@@ -37,7 +37,7 @@ CSS INDEX
 
 :root {
   --primary-color: #101010;    /* Default, will be overridden by Strapi */
-  --secondary-color: #EB1B2B;  /* Default, will be overridden by Strapi */
+  --secondary-color: #EE4B23;  /* Default, will be overridden by Strapi */
 }
 
 img {
