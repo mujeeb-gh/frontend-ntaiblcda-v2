@@ -6,7 +6,7 @@ console.log(`STRAPI_API_URL: ${STRAPI_API_URL}`);
 // We'll use regular fetch instead of axios
 async function getGlobalSettings() {
   try {
-    const response = await fetch(`${STRAPI_API_URL}/api/global`, {
+    const response = await fetch(`${STRAPI_API_URL}/api/global?populate=*`, {
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${STRAPI_API_TOKEN}`,

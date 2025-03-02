@@ -38,6 +38,7 @@ CSS INDEX
 :root {
   --primary-color: #101010;    /* Default, will be overridden by Strapi */
   --secondary-color: #EE4B23;  /* Default, will be overridden by Strapi */
+  --mobile-logo-url: url('/src/assets/images/1-logo-80x50.png');
 }
 
 img {
@@ -5874,7 +5875,13 @@ astute Single Event CSS
 }
 
 .mean-container .mean-bar::before {
-    text-transform: uppercase;
+    content: var(--mobile-logo-url) !important;
+    height: 30px;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9;
 }
 
 .footer-middle .widget.widget_archive .widget-title {
